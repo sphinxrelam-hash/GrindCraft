@@ -18,10 +18,21 @@ int main()
     printf("Enter frist number:");
     scanf("%d",&D);
 
-    printf("%d",A);
-    printf("%d",B);
-    printf("%d",C);
-    printf("%d",D);
+  if (A > B && A > C && A > D)
+  {
+      printf("The greatest number is: %d", A);
+  }
+  else if (B > A && B > C && B > D)
+  {
+    printf("The greatest number is: %d", B);
+  }
+  else if (C> A && C > B && C > D)
+  {
+    printf("The greatest number is: %d", C);
+  }
+  else{
+    printf("The greatest number is: %d", D);
+  }
 
     return 0;
 }
